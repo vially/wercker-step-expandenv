@@ -1,0 +1,11 @@
+box: wercker/default
+build:
+  steps:
+    - shellcheck
+    - script:
+        name: install expandenv
+        code: wget -O expandenv https://github.com/vially/expandenv/releases/download/v0.0.1/expandenv_linux-amd64 && chmod a+x expandenv
+    - script:
+        name: prune
+        code: |
+          rm -rf $WERCKER_ROOT/.git

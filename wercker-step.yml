@@ -1,0 +1,14 @@
+name: expandenv
+version: 0.1.0
+description: Replaces environment variables in input file
+keywords:
+  - expandenv
+  - environment
+  - replace
+properties:
+  input_file:
+    type: string
+    required: true
+  output_file:
+    type: string
+    required: false
