@@ -5,6 +5,7 @@ Wercker step for replacing environment variables in input file
 
 - `input_file` The input file
 - `output_file` (optional) The output file. If not specified the output is stored in the `EXPANDENV_OUTPUT` environment variable.
+- `output_env_var` (optional) When the output file is not specified, the output is stored in this environment variable. Default is `EXPANDENV_OUTPUT`.
 
 # Example
 
